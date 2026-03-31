@@ -1,0 +1,121 @@
+/* =====================
+   Container
+   ===================== */
+.container {
+  width: 700px;        /* largeur fixe */
+  max-width: 90%;      /* responsive sur petits écrans */
+  margin: 40px auto;   /* centrer avec marge auto */
+}
+
+/* =====================
+   Card Design
+   ===================== */
+.card-white {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect sur les cartes */
+.card-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   Headers
+   ===================== */
+h1, h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  color:#333333 ;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+/* =====================
+   Image Profile
+   ===================== */
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 15px;
+  display: block;   /* ajoute cette ligne */
+  margin-left: auto; 
+  margin-right: auto; /* ajoute ces deux lignes pour centrer */
+}
+
+/* =====================
+   Paragraphs
+   ===================== */
+p {
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* =====================
+   Links
+   ===================== */
+a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+/* =====================
+   Lists
+   ===================== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* =====================
+   Text alignment
+   ===================== */
+.text-center {
+  text-align: center;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+@media (max-width: 960px) {
+  .container { width: 600px; }
+  .img-circle { width: 130px; height: 130px; }
+}
+
+@media (max-width: 720px) {
+  .container { width: 90%; }
+  .img-circle { width: 120px; height: 120px; }
+  .list-inline li { display: block; margin: 5px 0; }
+}
+
+@media (max-width: 540px) {
+  .img-circle { width: 100px; height: 100px; }
+  a { font-size: 14px; }
+}
